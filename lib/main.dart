@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mejor_en_bici/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: true,
-      home: const MyHomePage(title: 'Mejor en bici'),
+      home: home(),
     );
   }
 }
