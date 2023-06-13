@@ -16,7 +16,7 @@ class _optionsState extends State<options> {
       width: 500,
       height: 700,
       decoration: BoxDecoration(
-        color: Colors.blue,
+        color: Colors.white,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(25),
           topRight: Radius.circular(25),
@@ -27,9 +27,27 @@ class _optionsState extends State<options> {
         top: 180,
       ),
 
-      child: Container(
-        child: Text("data"),
-      )
+      child: Column(
+        children: [
+          Container(
+            width: 200,
+            height: 60,
+            margin: EdgeInsets.only(
+              top: 60
+            ),
+            padding: EdgeInsets.all(0),
+            decoration: BoxDecoration(
+              color: Colors.grey
+            ),
+            child: Text(
+              "data",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20
+              ),),
+          )
+        ],
+      ),
     );
 
     return info_container;
