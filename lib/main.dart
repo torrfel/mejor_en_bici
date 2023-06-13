@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mejor_en_bici/header.dart';
 import 'package:mejor_en_bici/home.dart';
+import 'package:mejor_en_bici/options.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: true,
-      home: home(),
+      home: MyHomePage(title: "hola"),
     );
   }
 }
@@ -40,19 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-
-      body: Center(
-        
-
-        child: Column(
-          
-          
-        ),
-      ),
-       // This trailing comma makes auto-formatting nicer for build methods.
+      body: 
+        home()
     );
   }
 }
