@@ -4,7 +4,8 @@ class containerOptions extends StatelessWidget {
 
   String optionItem = "";
   String subOptionItem = "";
-  containerOptions(this.optionItem, this.subOptionItem );
+  String imageItems = ""; 
+  containerOptions(this.optionItem, this.subOptionItem, this.imageItems );
 
 
   @override
@@ -54,8 +55,11 @@ class containerOptions extends StatelessWidget {
               bottom: 10,
             ),
             decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(imageItems),
+                fit: BoxFit.cover
+              ),
               shape: BoxShape.circle,
-              color: Colors.black,
             ),
           )
         ],
