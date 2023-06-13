@@ -34,24 +34,38 @@ class _headerState extends State<header> {
               ),
         
               Container(
+                alignment: AlignmentDirectional.topStart,
                 margin: EdgeInsets.only(
                   left: 20
                 ),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("HELLO,"),
-                    Text("User")
+                    Text("HELLO,",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+                    ),),
+                    Text("User",
+                    style: TextStyle(
+                      color: Colors.white,
+                      
+                    ),
+                    )
                   ],
                 ),
               ),
               Spacer(),
             
               Container(
-                width: 15,
-                height: 15,
+                width: 30,
+                height: 30,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle, 
                   color: Colors.grey
+                ),
+                child: Center(
+                  child: Icon(Icons.notifications_outlined),
                 ),
               ),
             ],
@@ -60,14 +74,25 @@ class _headerState extends State<header> {
         Container(
           width: 300,
           height: 30,
+          padding: EdgeInsets.only(
+            left: 10,
+            right: 20
+          ),
           margin: EdgeInsets.only(
             top: 10
           ),
           decoration: BoxDecoration(
-            color: Colors.grey,
+            color: Color.fromARGB(231, 118, 153, 124),
             borderRadius: BorderRadius.circular(20)
           ),
-          
+          child: Row(
+            children: [
+              Icon(Icons.search),
+              Spacer(),
+              Text("search an option"),
+              Spacer(),
+            ],
+          ),
         )
       ],
     )
