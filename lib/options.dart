@@ -27,62 +27,171 @@ class _optionsState extends State<options> {
         top: 180,
       ),
 
-      child: Column(
-        children: [
-          Container(
-            width: 200,
-            height: 60,
-            margin: EdgeInsets.only(
-              top: 60
-            ),
-           
-            decoration: BoxDecoration(
-              border: Border(
-                bottom: BorderSide(
-                  color: Colors.black,
-                  width: 2
-                )
+      child: Container(
+        margin: EdgeInsets.only(
+              top: 50
+        ),
+        child: Column(   
+          children: [
+            Container(
+              width: 200,
+              height: 60,
+              margin: EdgeInsets.only(
+              top: 0
               ),
-              color: Colors.white
-            ),
-            child: Row(
-              children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Request",
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20
-                      ),
-                    ),
-                    Text("availability: 0",
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 15
-                      ),
-                    ),
-                  ],
-                ),
-                Spacer(),
-                Container(
-                  width: 45,
-                  height: 45,
-                  margin: EdgeInsets.only(
-                    bottom: 10,
-                  ),
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
                     color: Colors.black,
+                    width: 2
+                  )
+                ),
+                color: Colors.white
+              ),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Request",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                        ),
+                      ),
+                      Text("availability: 0",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 15
+                        ),
+                      ),
+                    ],
                   ),
-                )
-              ],
+                  Spacer(),
+                  Container(
+                    width: 45,
+                    height: 45,
+                    margin: EdgeInsets.only(
+                      bottom: 10,
+                    ),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  )
+                ],
+              ),
             ),
-          )
-        ],
+            Container(
+              width: 200,
+              height: 60,
+              margin: EdgeInsets.only(
+              top: 20
+              ),
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.black,
+                    width: 2
+                  )
+                ),
+                color: Colors.white
+              ),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Return",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                        ),
+                      ),
+                      Text("Time: 0",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 15
+                        ),
+                      ),
+                    ],
+                  ),
+                  Spacer(),
+                  Container(
+                    width: 45,
+                    height: 45,
+                    margin: EdgeInsets.only(
+                      bottom: 10,
+                    ),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              width: 200,
+              height: 60,
+              margin: EdgeInsets.only(
+              top: 20
+              ),
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: Colors.black,
+                    width: 2
+                  )
+                ),
+                color: Colors.white
+              ),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Help me",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                        ),
+                      ),
+                      Text("Inmediate help",
+                        textAlign: TextAlign.left,
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 15
+                        ),
+                      ),
+                    ],
+                  ),
+                  Spacer(),
+                  Container(
+                    width: 45,
+                    height: 45,
+                    margin: EdgeInsets.only(
+                      bottom: 10,
+                    ),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.black,
+                    ),
+                  )
+                ],
+              ),
+            ),
+            
+          ],
+        ),
       ),
     );
 
