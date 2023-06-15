@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mejor_en_bici/home/home.dart';
+import 'package:mejor_en_bici/request/firstSectionRequest.dart';
+import 'package:mejor_en_bici/request/requestDisponibilidad.dart';
 
 class request extends StatefulWidget {
   const request({super.key});
@@ -14,7 +16,9 @@ class _requestState extends State<request> {
     return MaterialApp(
       title: 'Mi App',
       home: Scaffold(
-        appBar: AppBar(
+        appBar: AppBar( 
+          backgroundColor:Color(0xFF04D939),
+          
           actions: [
             Align(
               child: Container(
@@ -54,8 +58,14 @@ class _requestState extends State<request> {
             ),
           ],
         ),
-        body: Text("prueba"),
-      )
+        body: ListView(
+          children: [
+            firstSectionRequest(),
+            
+            
+          ],
+        )
+        ),
     );
   }
 }
