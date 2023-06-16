@@ -58,11 +58,12 @@ class _requestState extends State<request> {
             ),
           ],
         ),
-        body: ListView(
+        body: Column(
           children: [
             firstSectionRequest(),
-            
-            
+            Expanded(
+              child: requestDisponibilidad(),
+            ),
           ],
         )
         ),
