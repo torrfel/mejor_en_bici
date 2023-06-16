@@ -5,8 +5,17 @@ class firstSectionRequest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.all(30),
+      padding: EdgeInsets.only(
+        bottom: 20
+      ),
       decoration: BoxDecoration(
-        border: Border()
+        border: Border(
+          bottom: BorderSide(
+            width: 2,
+            color: Colors.black
+          )
+        )
       ),
       child: Column(
         children: [
@@ -29,9 +38,18 @@ class firstSectionRequest extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.centerLeft,
+            child: Text("Escoge tu bici",
+              style: TextStyle(
+                fontSize: 11
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
             child: Text("Recurda que despues de seleccionar tu bici se reservara por un tiempo de 24 horas,",
               style: TextStyle(
-                fontSize: 20
+                fontWeight: FontWeight.w300,
+                fontSize: 13
               ),
             ),
           ),
