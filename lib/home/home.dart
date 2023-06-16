@@ -14,11 +14,13 @@ class home extends StatefulWidget {
 class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        header(),
-        options()
-      ],
+    return Scaffold(
+      body: Stack(
+        children: [
+          header(),
+          options()
+        ],
+      )
     );
   }
 }
