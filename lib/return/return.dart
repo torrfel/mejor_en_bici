@@ -25,9 +25,32 @@ class _ReturnState extends State<Return> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.grey,
-          title: Text('Return'),
           actions: [
-            
+            Expanded(
+              child: Container(
+                width: double.maxFinite,
+                child: Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 20
+                      ),
+                      child: IconButton(onPressed: (){}, icon: Icon(Icons.menu))),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 20
+                      ),
+                      child: Text('Return',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
         body: Container(
