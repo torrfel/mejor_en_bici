@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mejor_en_bici/return/buttonTime.dart';
 
 class Return extends StatefulWidget {
   const Return({super.key});
@@ -60,21 +61,7 @@ class _ReturnState extends State<Return> {
                     ],
                   ),
                 ),
-                Expanded(
-                  child: Container(
-                    width: 230,
-                    height: 160,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(30),
-                      image: DecorationImage(
-                        image:NetworkImage("https://cdn.dribbble.com/users/1046923/screenshots/11880765/media/db301739244514d6ec26d0dc541a619b.png"),
-                        fit: BoxFit.cover
-                      )
-                    ),
-                             
-                  ),
-                ),
+                buttonTime(),
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.all(20),
