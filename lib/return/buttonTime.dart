@@ -32,7 +32,12 @@ class buttonTime extends StatelessWidget {
         color: Colors.grey,
         borderRadius: BorderRadius.circular(20)
       ),
-      child: Text("data"),
+      child: Center(child: Text("00:00",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold
+                                ),
+                              )),
     );
     return Stack(
       alignment: Alignment(0.9, 1.3),
