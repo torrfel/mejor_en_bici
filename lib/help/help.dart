@@ -15,8 +15,33 @@ class _helpState extends State<help> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.grey,
-          title: Text('Help'),
-          
+          actions: [
+            Expanded(
+              child: Container(
+                width: double.maxFinite,
+                child: Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 20
+                      ),
+                      child: IconButton(onPressed: (){}, icon: Icon(Icons.menu))),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 20
+                      ),
+                      child: Text('Return',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
+          ],
         ),
         body: Column(
           children: [
