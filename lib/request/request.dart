@@ -16,46 +16,39 @@ class _requestState extends State<request> {
     return MaterialApp(
       title: 'Mi App',
       home: Scaffold(
-        appBar: AppBar( 
-          backgroundColor:Colors.grey,
-          
+        appBar: AppBar(
+          backgroundColor: Colors.grey,
           actions: [
-            Align(
+            Expanded(
               child: Container(
-                width: 300,
+                width: double.maxFinite,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Center(
-                      child: IconButton
-                        (onPressed: (){
-                          Navigator.push(context, 
-                            MaterialPageRoute(
-                              builder:(context) => home() )
-                            );
-                          }, 
-                          icon: Icon(Icons.arrow_back_ios_new_rounded)
-                        ),
-                    ),
-                    
                     Container(
-                      width: 100,
                       margin: EdgeInsets.only(
-                        left: 65
+                        left: 20
                       ),
-                      child: Text(
-                        "Request",
+                      child: IconButton(onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => home(),)
+                        );
+                      }, icon: Icon(Icons.menu))),
+                    Container(
+                      margin: EdgeInsets.only(
+                        left: 20
+                      ),
+                      child: Text('Return',
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20
                         ),
-                      )
+                      ),
                     ),
-    
                   ],
                 ),
               ),
-            ),
+            )
           ],
         ),
         body: Column(
