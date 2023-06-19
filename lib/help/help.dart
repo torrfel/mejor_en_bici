@@ -44,11 +44,27 @@ class _helpState extends State<help> {
                     height: 70,
                     
                     margin: EdgeInsets.all(20),
+                    padding: EdgeInsets.only(
+                      left: 30,
+                      right: 30,
+                    ),
                     decoration: BoxDecoration(
                       color: Colors.grey,
                       borderRadius: BorderRadius.circular(20)
                     ),
-                    child: Center(child: Text("data")),
+                    child: Center(
+                      child: Row(
+                        children: [
+                          Text("Option",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20
+                            ),
+                          ),
+                          Spacer(),
+                          Icon(Icons.arrow_forward)
+                        ],
+                    )),
                   );
                 },
               ),
