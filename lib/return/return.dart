@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mejor_en_bici/return/buttonTime.dart';
 
+import '../home/home.dart';
+
 class Return extends StatefulWidget {
   const Return({super.key});
   
@@ -35,7 +37,12 @@ class _ReturnState extends State<Return> {
                       margin: EdgeInsets.only(
                         left: 20
                       ),
-                      child: IconButton(onPressed: (){}, icon: Icon(Icons.menu))),
+                      child: IconButton(onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => home(),)
+                        );
+                      }, icon: Icon(Icons.menu))),
                     Container(
                       margin: EdgeInsets.only(
                         left: 20

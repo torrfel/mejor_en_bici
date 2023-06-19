@@ -28,7 +28,12 @@ class _requestState extends State<request> {
                       margin: EdgeInsets.only(
                         left: 20
                       ),
-                      child: IconButton(onPressed: (){}, icon: Icon(Icons.menu))),
+                      child: IconButton(onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => home(),)
+                        );
+                      }, icon: Icon(Icons.menu))),
                     Container(
                       margin: EdgeInsets.only(
                         left: 20

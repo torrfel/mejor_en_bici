@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mejor_en_bici/home/home.dart';
 
 class help extends StatefulWidget {
   const help({super.key});
@@ -25,7 +26,12 @@ class _helpState extends State<help> {
                       margin: EdgeInsets.only(
                         left: 20
                       ),
-                      child: IconButton(onPressed: (){}, icon: Icon(Icons.menu))),
+                      child: IconButton(onPressed: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => home(),)
+                        );
+                      }, icon: Icon(Icons.menu))),
                     Container(
                       margin: EdgeInsets.only(
                         left: 20
