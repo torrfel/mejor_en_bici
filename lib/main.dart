@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mejor_en_bici/help/help.dart';
 import 'package:mejor_en_bici/home/header.dart';
 import 'package:mejor_en_bici/home/home.dart';
 import 'package:mejor_en_bici/home/options.dart';
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
     
     return Scaffold(
       body: 
-        home()
+        help()
     );
   }
 }
