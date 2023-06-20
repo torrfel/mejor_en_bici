@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mejor_en_bici/return/buttonTime.dart';
+import 'package:mejor_en_bici/return/deslizarBoton.dart';
+
 
 import '../home/home.dart';
 
@@ -14,9 +16,10 @@ class Return extends StatefulWidget {
 
 class _ReturnState extends State<Return> {
   Widget alignText(Widget text){
+    
     return Align(
-    alignment: Alignment.bottomLeft,
-    child: text,
+      alignment: Alignment.bottomLeft,
+      child: text,
     );
   }
 
@@ -107,17 +110,7 @@ class _ReturnState extends State<Return> {
                     ),
                   ),
                 ),
-                Flexible(
-                  child: Container(
-                    width: 300,
-                    height: 70,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(20)
-                    ),
-                    
-                  ),
-                ),
+                DeslizarBoton()
               
               ],
               

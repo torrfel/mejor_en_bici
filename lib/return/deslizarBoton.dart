@@ -17,14 +17,25 @@ class _DeslizarBotonState extends State<DeslizarBoton> {
         });
       },
       child: AnimatedContainer(
-        duration: Duration(milliseconds: 300),
-        width: _estaDeslizado ? 150 : 50,
-        height: 50,
-        color: Colors.blue,
-        child: Center(
-          child: Text(
-            'Deslizar',
-            style: TextStyle(color: Colors.white),
+        duration: Duration(milliseconds: 10),
+        child: Container(
+          width: 200,
+          height: 50,
+          padding: EdgeInsets.only(
+              top: 4,
+              bottom: 4,
+              right: _estaDeslizado ? 0: 130,
+              left: _estaDeslizado ? 130 : 0
+          ),
+          decoration: BoxDecoration(
+            color: Colors.grey,
+            borderRadius: BorderRadius.circular(20)
+          ),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.red,
+              shape: BoxShape.circle
+            ),
           ),
         ),
       ),
